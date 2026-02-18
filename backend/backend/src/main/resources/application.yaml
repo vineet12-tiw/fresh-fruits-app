@@ -16,10 +16,10 @@ spring:
     # ==============================================================
   datasource:
       # 'createDatabaseIfNotExist=true' will create the DB for you automatically!
-    url: {}
-    username: ''         # Default XAMPP/MySQL username
-    password: "" # Default is often empty "" or "root"
-    driver-class-name:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}        # Default XAMPP/MySQL username
+    password: ${DB_PASSWORD} # Default is often empty "" or "root"
+
 
     # ==============================================================
     # 2. JPA / HIBERNATE (MySQL Dialect)
